@@ -79,6 +79,8 @@
       <object>objects\obj_keymagic</object>
       <object>objects\obj_keysilver</object>
       <object>objects\obj_keygold</object>
+      <object>objects\objl_lave_plateada</object>
+      <object>objects\obj_llave_roja</object>
     </objects>
     <objects name="general">
       <object>objects\obj_wallcorner</object>
@@ -99,7 +101,6 @@
       <object>objects\obj_up</object>
       <object>objects\objbomb</object>
       <object>objects\obj_goal</object>
-      <object>objects\objdoor</object>
       <object>objects\obj_hole</object>
       <object>objects\objbonus</object>
       <object>objects\obj_monster_12</object>
@@ -119,10 +120,12 @@
       <object>objects\obj_puertasilver</object>
       <object>objects\obj_puerta_negra</object>
       <object>objects\obj_puerta_roja</object>
+      <object>objects\objdoor</object>
     </objects>
     <object>objects\obj_inicio</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room3</room>
     <room>rooms\inicio</room>
     <room>rooms\nivel1</room>
     <room>rooms\nivel2</room>
