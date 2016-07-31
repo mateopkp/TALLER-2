@@ -32,7 +32,7 @@ keygold=false;
 keymagic=false;
 keysilver=false;
 llaveplateada = 0;
-llaveroja = 0;
+llave_roja = 0;
 
 </string>
           </argument>
@@ -148,17 +148,28 @@ if(place_meeting(x,y,obj_keysilver))
 //llave plateada
 if(place_meeting(x,y,objl_lave_plateada))
     {
-     with(objl_lave_plateada){instance_destroy();}
-     llaveplateada = llaveplateada + 1
-      audio_play_sound(snd_push,10,false);
+     var asd = instance_place(x,y,objl_lave_plateada)
+    with(asd)
+           {
+           instance_destroy()
+          
+           }
+            llaveplateada = llaveplateada + 1;
+            audio_play_sound(snd_push,10,false);
     }
 //llave roja
 if(place_meeting(x,y,obj_llave_roja))
-     {
-      with(obj_llave_roja){instance_destroy();}
-      llaveroja = llaveroja + 1
-      audio_play_sound(snd_push,10,false);
-      }
+    {
+     var asd = instance_place(x,y,obj_llave_roja)
+    with(asd)
+           {
+           instance_destroy()
+          
+           }
+            llave_roja = llave_roja + 1;
+            audio_play_sound(snd_push,10,false);
+    }
+
 </string>
           </argument>
         </arguments>
@@ -251,14 +262,14 @@ if(place_meeting(x+velocidad,y,obj_puerta_negra))||
 }
 
 //pueta roja
-if(llaveroja = 2)and(llaveplateada = 3)
+if(llave_roja == 2)&amp;&amp;(llaveplateada == 3)
 {
- if(place_meeting(x+velocidad,y,obj_puerta_roja))||
-(place_meeting(x-velocidad,y,obj_puerta_roja))||
-(place_meeting(x,y+velocidad,obj_puerta_roja))||
-(place_meeting(x,y-velocidad,obj_puerta_roja))
+ if(place_meeting(x+velocidad,y,objdoor))||
+(place_meeting(x-velocidad,y,objdoor))||
+(place_meeting(x,y+velocidad,objdoor))||
+(place_meeting(x,y-velocidad,objdoor))
    {
-   with(obj_puerta_roja){instance_destroy();}
+   with(objdoor){instance_destroy();}
    audio_play_sound(snddoor,10,false);
    }
 }
