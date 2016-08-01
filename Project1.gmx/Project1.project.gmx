@@ -125,10 +125,10 @@
     <object>objects\obj_inicio</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room3</room>
     <room>rooms\inicio</room>
     <room>rooms\nivel1</room>
     <room>rooms\nivel2</room>
+    <room>rooms\nivel4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
